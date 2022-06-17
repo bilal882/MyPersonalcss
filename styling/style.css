@@ -1,0 +1,505 @@
+.btn {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #3a4149;
+  background: #e7ebee;
+  line-height: 1.15;
+  font-size: 16px;
+}
+
+.btn:focus {
+  transition: all 0.1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #00ffbf;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --link: #2f00ff;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary,
+#btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-primary:focus,
+#btn-primary:focus {
+  background-color: var(--primary);
+}
+
+.btn-secondary,
+#btn-secondary {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-secondary:focus,
+#btn-secondary:focus {
+  background-color: var(--secondary);
+}
+
+.btn-success,
+#btn-success {
+  background: var(--success);
+  border-color: var(--success);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-success:focus,
+#btn-success:focus {
+  background-color: var(--success);
+}
+
+.btn-warning,
+#btn-warning {
+  background: var(--warning);
+  border-color: var(--warning);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-warning:focus,
+#btn-warning:focus {
+  background-color: var(--warning);
+}
+
+.btn-danger,
+#btn-danger {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-danger:focus,
+#btn-danger:focus {
+  background-color: var(--danger);
+}
+
+.btn-light,
+#btn-light {
+  background: var(--light);
+  border-color: var(--light);
+  color: #000;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-light:focus,
+#btn-light:focus {
+  background-color: var(--light);
+}
+
+.btn-dark,
+#btn-dark {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-dark:focus,
+#btn-dark:focus {
+  background-color: var(--dark);
+}
+
+.btn-link,
+#btn-link {
+  background-color: none;
+  border-color: var(--link);
+  color: var(--link);
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-link:focus,
+#btn-link:focus {
+  background-color: var(--light);
+}
+
+.btn-outline-primary,
+#btn-outline-primary {
+  background: none;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-outline-primary:hover,
+#btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.btn-outline-primary:focus,
+#btn-outline-primary:focus {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.btn-outline-secondary,
+#btn-outline-secondary {
+  background: none;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-outline-secondary:hover,
+#btn-outline-secondary:hover {
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+.btn-outline-secondary:focus,
+#btn-outline-secondary:focus {
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+.btn-outline-success,
+#btn-outline-success {
+  background: var(--success);
+  border-color: var(--success);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-outline-success:focus,
+#btn-outline-success:focus {
+  background-color: var(--success);
+}
+
+.btn-outline-warning,
+#btn-outline-warning {
+  background: var(--warning);
+  border-color: var(--warning);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-outline-warning:focus,
+#btn-outline-warning:focus {
+  background-color: var(--warning);
+}
+
+.btn-outline-danger,
+#btn-outline-danger {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-outline-danger:focus,
+#btn-outline-danger:focus {
+  background-color: var(--danger);
+}
+
+.btn-outline-light,
+#btn-outline-light {
+  background: var(--light);
+  border-color: var(--light);
+  color: #000;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-outline-light:focus,
+#btn-outline-light:focus {
+  background-color: var(--light);
+}
+
+.btn-outline-dark,
+#btn-outline-dark {
+  background: var(--dark);
+  border-color: var(--dark);
+  color: #fff;
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-outline-dark:focus,
+#btn-outline-dark:focus {
+  background-color: var(--dark);
+}
+
+.btn-outline-link,
+#btn-outline-link {
+  background-color: none;
+  border-color: var(--link);
+  color: var(--link);
+  cursor: pointer;
+  min-height: 3rem;
+  min-width: 4.5rem;
+}
+
+.btn-outline-link:focus,
+#btn-outline-link:focus {
+  background-color: var(--light);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.h5,
+h5 {
+  font-size: 1.25rem;
+}
+
+.h6,
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+.small,
+small {
+  font-size: 0.875em;
+}
+
+.mark,
+mark {
+  padding: 0.1875em;
+  background-color: var(--bs-highlight-bg);
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(var(--bs-body-color-rgb), 0.75);
+  text-align: left;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+label {
+  display: inline-block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+  .h1,
+h1 {
+    font-size: 2.5rem;
+  }
+}
+.h2,
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+  .h2,
+h2 {
+    font-size: 2rem;
+  }
+}
+.h3,
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+  .h3,
+h3 {
+    font-size: 1.75rem;
+  }
+}
+.h4,
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+  .h4,
+h4 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
