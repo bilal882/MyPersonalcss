@@ -74,6 +74,8 @@
      box-sizing: border-box
  }
 
+
+
  @media (prefers-reduced-motion:no-preference) {
      :root {
          scroll-behavior: smooth
@@ -426,14 +428,15 @@
  }
 
  textarea {
-     resize: vertical
+     resize: vertical;
+     width: 10rem;
  }
 
  fieldset {
      min-width: 0;
      padding: 0;
      margin: 0;
-     border: 0
+     border: 0;
  }
 
  legend {
@@ -4119,7 +4122,6 @@
      padding-left: 0;
      margin-bottom: 0;
      list-style: none
-     
  }
 
  .nav-link {
