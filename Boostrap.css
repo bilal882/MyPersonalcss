@@ -437,6 +437,7 @@
      padding: 0;
      margin: 0;
      border: 0;
+     box-shadow: 0 0 0 0 #fff, 0 0 0 3px #00ffbf;
  }
 
  legend {
@@ -2898,7 +2899,8 @@
      transform: scale(.85) translateY(-.5rem) translateX(.15rem)
  }
 
- .form-floating>.form-control-plaintext~label {
+ .form-floating>.for
+ m-control-plaintext~label {
      border-width: 1px 0
  }
 
